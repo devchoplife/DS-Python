@@ -57,9 +57,9 @@ class LinkedList():
         if position >= self.length:
             if position > self.length:
                 print("This position is not available, appending to the end of the list")
-            LinkedList.append(data)
+            self.append(data)
         elif position == 0:
-            LinkedList.prepend(data)
+            self.prepend(data)
         else:
             new_node = Node(data)
             current_node = self.head
