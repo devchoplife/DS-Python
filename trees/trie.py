@@ -8,6 +8,7 @@ class Trie():
     def __init__(self):
         self.root = trieNode()
 
+    # We define a private helper function to calculate the numerical index of each character in the range of 0-25
     def characterIndex(self, char):
         if char.isupper():
             return ord(char) - ord('A')
